@@ -1,0 +1,17 @@
+version: "2.1"
+services:
+  duplicati:
+    image: linuxserver/duplicati
+    container_name: duplicati
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8200:8200
+    volumes:
+      - /home/pi/appdata/duplicati/config:/config
+      - /media/data/backups:/backups
+      - /home/pi/appdata:/source    
+    restart: unless-stopped
+

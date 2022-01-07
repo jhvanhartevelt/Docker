@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+  domoticz:
+    image: domoticz/domoticz
+    container_name: domoticz
+    volumes:
+      - /home/pi/appdata/domoticz:/opt/domoticz/userdata
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    
+    
+    
+    Opmerking folders /home/pi/appdata/domoticz/scripts/dzVents/generated-scripts aanmaken
+    en eventueel templates folder met voorbeelden

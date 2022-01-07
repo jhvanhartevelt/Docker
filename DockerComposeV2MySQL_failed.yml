@@ -1,0 +1,20 @@
+version: '2'
+services:
+  cabin_db:
+    image: yobasystems/alpine-mariadb
+    volumes:
+      - /home/pi/mysql/db:/var/lib/mysql
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_DATABASE: cabin
+      MYSQL_USER: cabin
+      MYSQL_PASSWORD: cabinpw
+
+

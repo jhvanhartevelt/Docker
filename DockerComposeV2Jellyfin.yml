@@ -1,0 +1,21 @@
+version: "2.1"
+services:
+  jellyfin:
+    image: ghcr.io/linuxserver/jellyfin
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+      - JELLYFIN_PublishedServerUrl=192.168.178.220 #optional
+    network_mode: "host"  #needed for DLNA
+    volumes:
+      - /srv/dev-disk-by-id-ata-ST4000VN008-2DR166_ZDHA5S6C-part1/Share/Appdata/Jellyfin:/config 
+      - /srv/dev-disk-by-id-ata-ST4000VN008-2DR166_ZDHA5S6C-part1/Share/Media/Music:/data/music
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    restart: unless-stopped
+ 

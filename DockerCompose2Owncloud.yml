@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  owncloud:
+    image: owncloud
+    restart: always
+    ports:
+      - 1234:80
+    volumes:
+      - /home/pi/owncloud_data:/var/www/html
+      - /home/pi/owncloud_data/apps:/var/www/html/apps
+      - /home/pi/owncloud_data/config:/var/www/html/config
+      - /home/pi/owncloud_data/data:/var/www/html/data
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: angelo123

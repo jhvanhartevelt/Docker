@@ -1,0 +1,16 @@
+version: "2"
+services:
+  nextcloud:
+    image: linuxserver/nextcloud:latest
+    container_name: nextcloud
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8443:443
+    volumes:
+      - /home/pi/appdata/nextcloud/config:/config
+      - /home/pi/appdata/nextcloud/data:/data
+    restart: unless-stopped
+

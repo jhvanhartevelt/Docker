@@ -1,0 +1,13 @@
+version: "2"
+services:
+  felicette:
+    image: milhouse1337/felicette
+    container_name: felicette
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+     volumes:
+      - /home/pi/appdata/felicette-data:/root/felicette-data
+    restart: unless-stopped
+

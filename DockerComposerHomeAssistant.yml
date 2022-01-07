@@ -1,0 +1,19 @@
+  
+version: "2.1"
+services:
+  homeassistant:
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    container_name: homeassistant
+    volumes:
+      - /home/pi/appdata/homeassistant:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8888:80
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+    
+

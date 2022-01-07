@@ -1,0 +1,19 @@
+version: "2"
+services:
+  motioneye:
+    image: ccrisan/motioneye:master-armhf
+    container_name: motioneye
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8765:8765
+    volumes:
+      - /home/pi/appdata/motioneye/config:/etc/motioneye
+      - /home/pi/appdata/motioneye:/var/lib/motioneye
+    devices:
+      - /dev/video0
+   
+    restart: unless-stopped
+

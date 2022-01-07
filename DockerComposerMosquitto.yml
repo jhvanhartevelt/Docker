@@ -1,0 +1,18 @@
+# create folders sudo mkdir -p mosquitto/{config,data,log} in appdata folder  
+# create config file mosquitto/config/mosquitto.conf
+# create password file
+version: "2.1"
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    volumes:
+      - /home/pi/appdata/mosquitto:/mosquitto
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 1883:1883
+      - 9001:9001
+    restart: always

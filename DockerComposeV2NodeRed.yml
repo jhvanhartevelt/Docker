@@ -1,0 +1,15 @@
+version: "2"
+services:
+  nodered:
+    image: nodered/node-red
+    container_name: nodered
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 1880:1880
+    volumes:
+      - /home/pi/appdata/nodered:/data
+    restart: unless-stopped
+
