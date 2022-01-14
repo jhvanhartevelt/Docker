@@ -1,18 +1,22 @@
 version: "2"
 services:
   adguardhome:
-    image: adguard/adguardhome
+    image: adguard/adguardhome:latest
     container_name: adguardhome
     ports:
       - 53:53/tcp
       - 53:53/udp
-      - 784:784/udp
-      - 853:853/tcp
+#      - 784:784/udp
+#      - 853:853/tcp
       - 3000:3000/tcp
-      - 8053:80/tcp
-      - 8443:443/tcp
+      - 85:80/tcp
+#      - 8443:443/tcp
     volumes:
       - /home/pi/appdata/adguard/workdir:/opt/adguardhome/work
       - /home/pi/appdata/adguard/confdir:/opt/adguardhome/conf
     restart: unless-stopped
 
+
+
+## jan-2022 After settings on port 3000, web app on port 85 does not react
+## see: https://samuelsson.dev/install-adguard-home-with-docker-on-a-raspberry-pi-4/
