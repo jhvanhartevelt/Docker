@@ -11,12 +11,17 @@ services:
       - 3000:3000/tcp
       - 85:80/tcp
 #      - 8443:443/tcp
+   network_mode: "ag_network"  #use created network
     volumes:
       - /home/pi/appdata/adguard/workdir:/opt/adguardhome/work
       - /home/pi/appdata/adguard/confdir:/opt/adguardhome/conf
     restart: unless-stopped
 
 
+
+#solved:
+# Add network
+# sudo docker network create -d macvlan -o parent=eth0 --subnet=192.168.178.0/24 --gateway=192.168.178.1 --ip-range=192.168.178.195/32 ag_network
 
 ## jan-2022 After settings on port 3000, web app on port 85 does not react
 ## see: https://samuelsson.dev/install-adguard-home-with-docker-on-a-raspberry-pi-4/
