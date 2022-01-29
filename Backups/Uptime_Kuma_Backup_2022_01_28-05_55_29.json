@@ -4,7 +4,7 @@
         {
             "id": 2,
             "name": "dukeel_bot",
-            "config": "{\"name\":\"dukeel_bot\",\"type\":\"telegram\",\"isDefault\":true,\"telegramChatID\":\"1730055716\",\"telegramBotToken\":\"1922434334:AAF9WGDz-UmY9PouuR6d0RoSwQPAdwcYWC4\",\"applyExisting\":true}",
+            "config": "{\"name\":\"dukeel_bot\",\"type\":\"telegram\",\"isDefault\":true,\"telegramChatID\":\"1730055716\",\"telegramBotToken\":\"",\"applyExisting\":true}",
             "active": 1,
             "userId": 1,
             "isDefault": 1
