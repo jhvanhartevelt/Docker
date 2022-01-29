@@ -1,0 +1,411 @@
+{
+    "version": "1.11.3",
+    "notificationList": [
+        {
+            "id": 2,
+            "name": "dukeel_bot",
+            "config": "{\"name\":\"dukeel_bot\",\"type\":\"telegram\",\"isDefault\":true,\"telegramChatID\":\"1730055716\",\"telegramBotToken\":\"1922434334:AAF9WGDz-UmY9PouuR6d0RoSwQPAdwcYWC4\",\"applyExisting\":true}",
+            "active": 1,
+            "userId": 1,
+            "isDefault": 1
+        }
+    ],
+    "monitorList": [
+        {
+            "id": 1,
+            "name": "SGKwale website",
+            "url": "http://sgkwale.nl",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 300,
+            "retryInterval": 300,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 2,
+            "name": "Jan van Hartevelt site",
+            "url": "https://janvanhartevelt.nl",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 60,
+            "retryInterval": 60,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 3,
+            "name": "Domoticz ZWave",
+            "url": "http://192.168.178.112:8080",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 600,
+            "retryInterval": 600,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 4,
+            "name": "Domoticz Smart",
+            "url": "http://192.168.178.113:8080",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 600,
+            "retryInterval": 600,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 5,
+            "name": "OpenMediaVault",
+            "url": "http://192.168.178.220",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 594,
+            "retryInterval": 594,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 6,
+            "name": "Pi Hole",
+            "url": "http://192.168.178.254",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 600,
+            "retryInterval": 600,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 7,
+            "name": "XS4all homepage",
+            "url": "https://nelleker.home.xs4all.nl/",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 60,
+            "retryInterval": 60,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 8,
+            "name": "Speedtest",
+            "url": "https://",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": "nelleker.home.xs4all.nl",
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "ping",
+            "interval": 60,
+            "retryInterval": 60,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 9,
+            "name": "LibreElec",
+            "url": "http://192.168.178.111",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 600,
+            "retryInterval": 600,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 10,
+            "name": "PiHole DNS",
+            "url": "https://",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": "192.168.178.254",
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 0,
+            "type": "dns",
+            "interval": 60,
+            "retryInterval": 60,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "AAAA",
+            "dns_resolve_server": "192.168.178.254",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 11,
+            "name": "FritzBox",
+            "url": "http://192.168.178.1",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 600,
+            "retryInterval": 600,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        },
+        {
+            "id": 12,
+            "name": "PVOutput",
+            "url": "https://pvoutput.org/favourite.jsp",
+            "method": "GET",
+            "body": null,
+            "headers": null,
+            "basic_auth_user": null,
+            "basic_auth_pass": null,
+            "hostname": null,
+            "port": null,
+            "maxretries": 0,
+            "weight": 2000,
+            "active": 1,
+            "type": "http",
+            "interval": 600,
+            "retryInterval": 600,
+            "keyword": null,
+            "ignoreTls": false,
+            "upsideDown": false,
+            "maxredirects": 10,
+            "accepted_statuscodes": [
+                "200-299"
+            ],
+            "dns_resolve_type": "A",
+            "dns_resolve_server": "1.1.1.1",
+            "dns_last_result": null,
+            "pushToken": null,
+            "notificationIDList": {
+                "2": true
+            },
+            "tags": []
+        }
+    ]
+}
