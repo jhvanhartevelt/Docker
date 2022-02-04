@@ -5,6 +5,7 @@ services:
     container_name: rpi-monitor
     volumes:
       - /opt/vc:/opt/vc
+      - /sys/fs/cgroup:/sys/fs/cgroup
       - /boot:/boot
       - /sys:/dockerhost/sys:ro
       - /etc:/dockerhost/etc:ro
