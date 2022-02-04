@@ -8,7 +8,7 @@ services:
     container_name: mosquitto
     volumes:
     #  - /home/pi/appdata/mosquitto:/mosquitto
-    - /home/pi/appdata/mosquitto/conf:/mosquitto/conf
+    - /home/pi/appdata/mosquitto/config:/mosquitto/conf
     - /home/pi/appdata/mosquitto/log:/mosquitto/log
     - /home/pi/appdata/mosquitto/data:/mosquitto/data
     environment:
