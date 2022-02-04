@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  joomla:
+    image: joomla
+    restart: always
+    ports:
+      - 8181:80
+    volumes:
+      - "/home/jan/Bin/docker/appdata/www/html:/var/www/html"
+    environment:
+      JOOMLA_DB_HOST: joomladb
+      JOOMLA_DB_PASSWORD: example
+
+  joomladb:
+    image: mysql:5.6
+    restart: always
+    volumes:
+      - "/home/jan/Bin/docker/appdata/mysql_data:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  phpmyadmin:
+   image: phpmyadmin/phpmyadmin
+   container_name: phpmyadmin
+   environment:
+   - PMA_ARBITRARY=1
+   restart: always
+   ports:
+   - 8081:80
+   volumes:
+   - /sessions
+   
+ 
+#server name install, root/example db:joomla  
+####  jadmin / DEMO%w1ndkr8   
+#####################   docker-compose -f stack.yml up
+
