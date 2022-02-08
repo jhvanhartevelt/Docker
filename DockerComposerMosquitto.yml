@@ -7,6 +7,7 @@ services:
   mosquitto:
     image: eclipse-mosquitto
     container_name: mosquitto
+    network_mode: host
     volumes:
     #- /home/pi/appdata/mosquitto:/mosquitto
     no connection
