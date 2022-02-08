@@ -1,17 +1,18 @@
 # create folders sudo mkdir -p mosquitto/{config,data,log} in appdata folder
 # create config file mosquitto/config/mosquitto.conf
 # create password file
+# Bugfix "no log for ' ' ''  For logging in Portainer  add  "log_dest stdout" in mosquitto.conf
 version: "2.1"
 services:
   mosquitto:
     image: eclipse-mosquitto
     container_name: mosquitto
     volumes:
-    - /home/pi/appdata/mosquitto:/mosquitto
-    ## no connection 
-    ##- /home/pi/appdata/mosquitto/config:/mosquitto/conf
-    ##- /home/pi/appdata/mosquitto/log:/mosquitto/log
-    ##- /home/pi/appdata/mosquitto/data:/mosquitto/data
+    #- /home/pi/appdata/mosquitto:/mosquitto
+    no connection
+    - /home/pi/appdata/mosquitto/config:/mosquitto/config
+    - /home/pi/appdata/mosquitto/log:/mosquitto/log
+    - /home/pi/appdata/mosquitto/data:/mosquitto/data
     environment:
       - PUID=1000
       - PGID=1000
