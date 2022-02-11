@@ -9,6 +9,7 @@ services:
             - TZ=Europe/Amsterdam
             - WATCHTOWER_MONITOR_ONLY=true
             - WATCHTOWER_CLEANUP=true
+            # Ajouter un 0 en premier pour les secondes : secondes | minutes | heures | jour du mois | mois | jour de la semaine
             - WATCHTOWER_SCHEDULE= 0 0 04 ? * FRI #At 04:00 AM, only on Friday Change to suit
             - WATCHTOWER_NOTIFICATIONS=email
             - WATCHTOWER_NOTIFICATION_EMAIL_FROM=mail@janvanhartevelt.nl
