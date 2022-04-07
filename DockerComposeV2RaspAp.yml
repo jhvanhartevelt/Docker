@@ -1,0 +1,15 @@
+version: '2.1'
+
+
+services:
+  hotspot:
+    image: jrcichra/raspap-docker:latest  
+    privileged: true
+    network_mode: host
+    labels:
+      io.balena.features.sysfs: '1'
+    cap_add:
+      - SYS_ADMIN
+
+
+Opmerking: wekt niet

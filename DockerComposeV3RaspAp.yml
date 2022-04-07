@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    raspap-docker:
+        container_name: raspap
+        privileged: true
+        network_mode: host
+        volumes:
+            - '/sys/fs/cgroup:/sys/fs/cgroup:ro'
+        image: jrcichra/raspap-docker
+
+-- https://www.composerize.com/

@@ -3,6 +3,10 @@ services:
   rpi-monitor:
     image: michaelmiklis/rpi-monitor:latest
     container_name: rpi-monitor
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
     volumes:
       - /opt/vc:/opt/vc
       - /sys/fs/cgroup:/sys/fs/cgroup
@@ -13,7 +17,7 @@ services:
       - /usr/lib:/dockerhost/usr/lib:ro
     devices:
       - /dev/vchiq
-      - /dev/vcsm
+      - /dev/vcsm-cma
     restart: unless-stopped
     ports:
       - 8888:8888
