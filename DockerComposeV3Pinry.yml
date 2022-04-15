@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    pinry:
+        ports:
+            - 8981:80
+        volumes:
+            - '/home/pi/appdata/pinry:/data'
+        image: getpinry/pinry
